@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myren</title>
+    <style>
+        *, *::after, *::before{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        #root{
+            background-image: url("./src/logo0.svg");
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100vw;
+            height: 100vh;
+            transition: 1.5s all;
+            animation: do 3s infinite;
+        }
+        @keyframes do {
+            0%{opacity: 1;}
+            50%{opacity: 0.5;}
+            100%{opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
